@@ -1,0 +1,11 @@
+server:
+   port: 9001
+javax:
+   sql:
+      DataSource:
+         airportDataSource:
+            dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+            dataSource:
+               url: jdbc:postgresql://localhost:5432/postgres
+               user: postgres
+               password: afsaralam15
