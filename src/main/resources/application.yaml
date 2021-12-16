@@ -4,8 +4,11 @@ javax:
    sql:
       DataSource:
          airportDataSource:
-            dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+            dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource 
             dataSource:
-               url: jdbc:postgresql://localhost:5432/postgres
-               user: postgres
+               url: jdbc:mysql://localhost:3306/airport-db?characterEncoding=latin1&useConfigs=maxPerformance
+               user: root
                password: afsaralam15
+               
+               
+               

@@ -21,8 +21,8 @@ public class Airport implements Serializable {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "apt_id_seq")
-	@SequenceGenerator(name = "apt_id_seq", sequenceName = "apt_id_seq", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@SequenceGenerator(name = "apt_id_seq", sequenceName = "apt_id_seq", allocationSize = 1)
 	private Long id;
 
 	@Column(name = "apt_code")
